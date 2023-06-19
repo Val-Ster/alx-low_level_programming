@@ -1,21 +1,19 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - A program that prints the alphabets in lowercase
+ * Return:0 (success)
  */
 
 int main(void)
 {
-	char low;
+	char letter = 'a';
 
-	for (low = 'a'; low <= 'z'; low++)
-{
-putchar(low);
-}
-putchar('\n');
-return (0);
+	while (letter <= 'z')
+	{
+		putchar(letter);
+		letter = letter + 1;
+	}
+	putchar('\n');
+	return (0);
 }
