@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 #include "dog.h"
 
 /**
@@ -9,17 +8,14 @@
  * @age: Age of the dog
  * @owner: Owner of the dog
  *
- * Description: This function initializes a struct dog with the provided
- * name, age, and owner values.
+ * Description: This function initializes the fields of a struct dog.
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d == NULL)
 		return;
 
-	strncpy(d->name, name, sizeof(d->name) - 1);
-	d->name[sizeof(d->name) - 1] = '\0';
+	d->name = name;
 	d->age = age;
-	strncpy(d->owner, owner, sizeof(d->owner) - 1);
-	d->owner[sizeof(d->owner) - 1] = '\0';
+	d->owner = owner;
 }
