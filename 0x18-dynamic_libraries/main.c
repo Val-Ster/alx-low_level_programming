@@ -34,7 +34,7 @@ void _puts(char *s)
 }
 char *_strcpy(char *dest, char *src)
 {
-	return ("Hello");
+	return ("This is basically meant to hold any string");
 }
 int _atoi(char *s)
 {
@@ -42,11 +42,11 @@ int _atoi(char *s)
 }
 char *_strcat(char *dest, char *src)
 {
-	return ("Hello");
+	return ("So is this");
 }
 char *_strncat(char *dest, char *src, int n)
 {
-	return ("Hello");
+	return ("And the rest");
 }
 char *_strncpy(char *dest, char *src, int n)
 {
@@ -58,11 +58,11 @@ int _strcmp(char *s1, char *s2)
 }
 char *_memset(char *s, char b, unsigned int n)
 {
-	return ("Hello");
+	return ("Hello world");
 }
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	return ("Hello");
+	return ("Hi programmer");
 }
 char *_strchr(char *s, char c)
 {
