@@ -40,23 +40,33 @@ int mul(int a, int b)
  * division - divides two integers
  * @a: the first integer operand
  * @b: the second integer operand
+ * @result: pointer to store the result of the division
  *
  * Return: The result of the division operation
  */
-int division(int a, int b)
+int division(int a, int b, int *result)
 {
-	return (a / b);
+	if (b != 0)
+	{
+		*result = (a / b);
+		return (1); /* Success*/
+	}
 }
 
 /**
  * mod - finds the remainder of  two integers after division
  * @a: the first integer operand
  * @b: the second integer operand
+ * @result: pointer to store the result of the modulus
  *
  * Return: The result of the modulus operation
  */
 
-int mod(int a, int b)
+int mod(int a, int b, int *result)
 {
-	return (a % b);
+	if (b != 0)
+	{
+		*result = a % b;
+		return (1);  /* Success*/
+	}
 }
