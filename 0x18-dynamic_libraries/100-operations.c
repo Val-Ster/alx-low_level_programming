@@ -46,14 +46,9 @@ int mul(int a, int b)
 int division(int a, int b)
 {
 	if (b != 0)
-	{
 		return (a / b);
-	}
-	else
-	{
-		/*Handle division by zero*/
-		return (0);
-	}
+	fprintf(stderr, "%d / %d: Division by zero\n", a, b);
+	return (0);
 }
 
 /**
@@ -67,12 +62,7 @@ int division(int a, int b)
 int mod(int a, int b)
 {
 	if (b != 0)
-	{
 		return (a % b);
-	}
 	else
-	{
-		/*Handle modulus by zero*/
 		return (0);
-	}
 }
