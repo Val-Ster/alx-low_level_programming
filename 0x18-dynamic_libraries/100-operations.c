@@ -64,5 +64,5 @@ int mod(int a, int b)
 	if (b != 0)
 		return (a % b);
 	else
-		return (0);
+		return (0); /*i can use this method, or the one i used for div*/
 }
