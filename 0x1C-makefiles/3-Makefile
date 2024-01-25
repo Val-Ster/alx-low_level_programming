@@ -4,20 +4,15 @@ OBJ = $(SRC:.c=.o)
 NAME = school
 RM = rm -f
 
-# make all i.e. makes all files executable
 all : $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 	
-# Rule to clean Emacs and Vim temporary files, object files, and the executable
 clean :
 	$(RM) *~ *.swp $(OBJ)
 
-# Rule to delete object files
 oclean :
 	$(RM) $(OBJ)
 	
-# delets all (temp files, executables & object files)
 fclean : clean clean
 	
-# deletes all and recompiles all source files
 re : fclean all
