@@ -12,8 +12,8 @@ def island_perimeter(grid):
 
     Parameters:
     - grid: List of lists of integers representing the island.
-    0 represents a water zone.
-    1 represents a land zone.
+            0 represents a water zone.
+            1 represents a land zone.
 
     Returns:
     - Perimeter of the island.
@@ -26,7 +26,7 @@ def island_perimeter(grid):
                 # Assuming a land cell contributes 4 to the perimeter
                 perimeter += 4
 
-                # Check neighbor cells & subtract 1 for each adjacent land cell
+        # Check neighboring cells and subtract 1 for each adjacent land cell
                 if i > 0 and grid[i - 1][j] == 1:
                     perimeter -= 1
                 if i < len(grid) - 1 and grid[i + 1][j] == 1:
@@ -36,4 +36,4 @@ def island_perimeter(grid):
                 if j < len(grid[0]) - 1 and grid[i][j + 1] == 1:
                     perimeter -= 1
 
-        return perimeter
+    return perimeter
